@@ -6,9 +6,9 @@ public class Block {
     private int index;
     private Date date;
     private String data;
-    private long nonce;
+    private int nonce;
 
-    public Block(String currentBlockHash, String previousBlockHash, int index, Date date, String data, long nonce) {
+    public Block(String currentBlockHash, String previousBlockHash, int index, Date date, String data, int nonce) {
         this.currentBlockHash = currentBlockHash;
         this.previousBlockHash = previousBlockHash;
         this.index = index;
@@ -57,11 +57,11 @@ public class Block {
         this.data = data;
     }
 
-    public long getNonce() {
+    public int getNonce() {
         return nonce;
     }
 
-    public void setNonce(long nonce) {
+    public void setNonce(int nonce) {
         this.nonce = nonce;
     }
 }
